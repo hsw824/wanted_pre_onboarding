@@ -1,0 +1,52 @@
+* {
+  margin: 0 auto;
+}
+.Toggle {
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ccc;
+  margin-top: 100px;
+}
+
+.Toggle > div {
+  width: 500px;
+}
+.container {
+  height: 50px;
+  position: relative;
+}
+.box {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.box1 {
+  right: 50%;
+}
+.box2 {
+  left: 50%;
+}
+.circle {
+  width: 200px;
+  height: 20px;
+  background-color: #fff;
+  margin: 0;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 0;
+  top: 10%;
+  left: 5%;
+  padding: 15px;
+  box-sizing: border-box;
+  transition-property: transform;
+  transition-duration: 1.5s;
+}
+
+.active {
+  transform: translateX(250px);
+}
